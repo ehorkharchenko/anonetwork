@@ -1,0 +1,185 @@
+/* LIVE */
+.area {
+  width: 100%; height: 100%;
+  position: fixed;
+  
+  display: grid;
+
+  grid-template-columns: 100%;
+  grid-template-rows: 11.5% 88.5%;
+}
+ .choice {
+   grid-column: 1;
+   grid-row: 1;
+
+   background: #FFF;
+   box-shadow: 0 0 5px rgba(200, 200, 200, 0.5);
+
+   display: flex;
+   justify-content: space-between;
+
+   z-index: 1;
+ }
+  /* button back to profile */
+  .toProfile {
+    width: 100px; height: 100%;
+    display: grid;
+  }
+   .to {
+     width: 40px; height: 35px;
+     background: rgba(235, 235, 235, 0.95);
+     border: none;
+     border-radius: 0 5px 5px 0;
+     align-self: center;
+     justify-self: start;
+   }
+    .to>span {
+      font-family: 'Concert One';
+      font-weight: 600;
+      font-size: 25px;
+      margin: 0 0 0 3px;
+      line-height: 15px;
+      color: #666;
+    }
+  
+  /* choice feed ( fresh Or Popular ) */
+  .mode {
+    width: auto; height: 100%;
+    display: grid;
+    margin: 0 25px 0 0;
+
+    grid-template-columns: 45% 55%;
+    grid-template-rows: 100%;
+
+    align-items: center;
+    justify-items: center;
+  }
+    .mode>button {
+      margin: 0 15px;
+    }
+
+   .fresh {
+     width: auto; height: 45px;
+     min-width: 30px;
+     padding: 0 15px;
+
+     background: #3cff00;
+     border: none;
+     border-radius: 7px;
+     box-shadow: 0 0 5px #3cff00;
+
+     transition: transform .1s;
+   }
+   .fresh:active {
+     transform: scale(0.9);
+     transition: transform .1s;
+   }
+    .full_fresh_label {
+      display: inline-block;
+    }
+
+    .short_fresh_label {
+      display: none;
+    }
+
+    @media (max-width: 500px) {
+      .fresh {
+        padding: 0 10px;
+      }
+
+      .full_fresh_label {
+        display: none;
+      }
+  
+      .short_fresh_label {
+        display: inline-block;
+      }
+    }
+
+    .fresh>span {
+      font-family: 'Concert One';
+      font-weight: 600;
+      font-size: 20px;
+
+      letter-spacing: 3.5px;
+      color: #FFF;
+    }
+
+   .hot {
+     width: auto; height: 45px;
+
+     min-width: 30px;
+     max-width: 100px;
+
+     padding: 0 15px;
+
+     background: rgba(245, 29, 51, 1);
+     border: none;
+     border-radius: 7px;
+     box-shadow: 0 0 4px rgba(245, 29, 51, 1);
+
+     transition: transform .1s;
+   }
+   .hot:active {
+     transform: scale(0.9);
+     transition: transform .1s;
+   }
+    .full_hot_label {
+      display: inline-block;
+    }
+
+    .short_hot_label {
+      width: 25px; margin: auto;
+      display: none;
+    }
+
+    @media (max-width: 500px) {
+      
+      .hot {
+        padding: 0 12px;
+      }
+
+      .full_hot_label {
+        display: none;
+      }
+  
+      .short_hot_label {
+        display: block;
+      }
+    }
+
+    .hot>span {
+      font-family: 'Concert One';
+      font-weight: 600;
+      font-size: 20px;
+      margin: 0 0 0 5px;
+      letter-spacing: 6px;
+      color: #FFF;
+    }
+
+    .add {
+      width: 50px; height: 50px;
+      position: fixed;
+   
+      left: 30px;
+      bottom: 30px;
+   
+      background: rgba(255, 238, 0, 0.9);
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 0 6px rgba(255, 238, 0, 0.9);
+   
+      z-index: 100;
+    }
+    .add:active {
+      transform: scale(0.9);
+      transition: transform 0.1s;
+    }
+     .add>span {
+       font-family: 'Yeon Sung';
+       font-weight: 900;
+       font-size: 35px;
+   
+       line-height: 55px;
+       color: #c3a720;
+     }

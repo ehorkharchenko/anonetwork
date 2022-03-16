@@ -1,0 +1,84 @@
+.area {
+  width: 50%; height: 100%;
+  background: #FFF;
+
+  justify-self: center;
+  display: grid;
+
+  grid-template-columns: 100%;
+  grid-template-rows: 85% 15%;
+}
+ .panel {
+   width: 80%; height: 95%;
+   border-top: 2px solid #eee;
+
+   align-self: start;
+   justify-self: center;
+
+   display: flex;
+   justify-content: space-around;
+ }
+  .to { display: grid; }
+
+   .to>button {
+     width: 35px; height: 35px;
+
+     background: rgba(235, 235, 235, 0.95);
+     border: none;
+     border-radius: 5px;
+
+     align-self: center;
+     justify-self: center;
+   }
+    .to>button>span {
+      font-family: 'Concert One';
+      font-weight: 600;
+      font-size: 25px;
+
+      line-height: 15px;
+      color: #505050;
+    }
+
+  .choice {
+    width: 30%;
+    display: grid;
+
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+  }
+   .inbox {
+     transform: rotate(-90deg);
+   }
+
+   .create {
+     transform: rotate(90deg);
+   }
+
+   .item {
+     width: 50px; height: 50px;
+
+     background: rgba(255, 238, 0, 1);
+     border: none;
+     border-radius: 10px;
+
+     align-self: center;
+     justify-self: center;
+
+     transition-property: width height;
+     transition-duration: .1s .1s;
+   }
+   .item:active {
+     width: 45px; height: 45px;
+
+     transition-property: width height;
+     transition-duration: .1s .1s;
+   }
+    .symbol {
+      font-family: 'Concert One';
+      font-weight: 900;
+      font-size: 30px;
+      color: rgba(160, 135, 5, 0.7);
+
+      line-height: 10px;
+      letter-spacing: 2.5px;
+    }

@@ -1,0 +1,282 @@
+.area {
+  grid-column: 1;
+  grid-row: 1;
+
+  width: 100%; height: 100%;
+  background: none;
+
+  display: grid;
+
+  grid-template-columns: 100%;
+  grid-template-rows: 11.5% 88.5%;
+
+  align-self: center;
+  justify-self: center;
+
+  z-index: 0;
+}
+  /* Friends icon */
+.friends {
+  width: 100%; height: 100%;
+  background: #FFF;
+  box-shadow: 0 0 5px rgba(50, 50, 50, 0.2);
+  display: grid;
+  z-index: 1;
+}
+
+ .tofriends {
+   width: 45px; height: 45px;
+
+   background: #18e8ff;
+   border: none;
+   border-radius: 25%;
+   box-shadow: 0 0 6px #18e8ff;
+
+   margin: 0 30px;
+
+   align-self: center;
+   justify-self: end;
+ }
+  .tofriends>span {
+    font-family: 'Concert One';
+    font-weight: 500;
+    font-size: 18px;
+
+    color: #FFF;
+    letter-spacing: 2px;
+  }
+  .tofriends>img {
+    width: 90%;
+    transform: rotate(-45deg) scaleX(-1);
+  }
+
+ .tofriends:active {
+   transform: scale(0.9);
+   transition: .1s;
+ }
+
+  /* Blank */
+.blank {
+  width: 100%; height: 100%;
+  min-width: 320px;
+  max-width: 750px;
+  background: #FFF;
+  box-shadow: 0 0 5px rgba(50, 50, 50, 0.1);
+
+  display: grid;
+
+  grid-template-columns: 100%;
+  grid-template-rows: 87% 13%;
+
+  align-self: start;
+  justify-self: center;
+
+  z-index: 0;
+}
+  /* Get Data */
+ .loaderGetData {
+   width: 60px; height: 60px;
+   margin: 10% 0 0 0;
+   
+   align-self: start;
+   justify-self: center;
+ }
+
+  /* Profile */
+ .user {
+   grid-column: 1;
+   grid-row: 1;
+
+   width: 80%; height: 220px;
+   min-width: 300px;
+   margin: 0 0 0 5%;
+
+   align-self: start;
+   justify-self: start;
+
+   display: grid;
+
+   grid-template-columns: 40% 40%;
+   grid-template-rows: 100%;
+ }
+  .icon {
+    align-self: center;
+    justify-self: center;
+  }
+  .userInfo {
+    width: 80%; height: 80%;
+
+    align-self: start;
+    display: grid;
+
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+  }
+   .profileTo {
+     width: 180px;
+     align-self: center;
+     display: flex;
+     justify-content: space-between;
+   }
+    .username {
+      align-self: end;
+      margin: 0 0 5px 0;
+    }
+     .username>span {
+       font-family: 'Concert One';
+       font-weight: 200;
+       font-size: 17.5px;
+       
+       letter-spacing: 2.5px;
+       color: #000;
+     }
+     
+     .username>span>span {
+       font-family: Dosis;
+       font-weight: 600;
+       font-size: 17.5px;
+
+       letter-spacing: 1px;
+       color: #666;
+     }
+
+    .edit {
+      width: 65px; height: 35px;
+
+      background: #eee;
+      border: none;
+      border-radius: 5px;
+
+      cursor: pointer;
+
+      align-self: center;
+      justify-self: center;
+    }
+     .edit>span {
+       font-family: Dosis;
+       font-weight: 600;
+       font-size: 16px;
+
+       letter-spacing: 1.5px;
+       color: #151515;
+     }
+
+    .set {
+      background: none;
+      border: none;
+      
+      cursor: pointer;
+      align-self: center;
+      justify-self: start;
+    }
+    .cancel {
+      width: 85px; height: 30px;
+
+      background: none;
+      border: none;
+      border-radius: 5px;
+
+      transition-property: background-color;
+      transition-duration: 1s;
+    }
+    .cancel:hover {
+      background: rgba(200, 200, 200, 0.2);
+
+      transition-property: background-color;
+      transition-duration: 1s;
+    }
+     .cancel>span {
+       font-family: Jura;
+       font-weight: 700;
+       font-size: 16px;
+       letter-spacing: 2px;
+     }
+
+   .apply {
+     width: 75px; height: 35px;
+
+      background: rgba(255, 238, 0, .7);
+      border: none;
+      border-radius: 5px;
+
+      align-self: start;
+
+      transition-property: background-color;
+      transition-duration: .5s;
+   }
+    .apply>span {
+      font-family: Dosis;
+      font-weight: 900;
+      font-size: 16px;
+
+      letter-spacing: 2px;
+      color: #c3a720;
+    }
+
+   .live {
+      grid-column: 1;
+      grid-row: 1;
+      align-self: center;
+      justify-self: start;
+      width: 90px; height: 45px;
+      background: rgba(245, 29, 51, 0.85);
+      border: none;
+      border-radius: 0 5px 5px 0;
+      transition-property: background-color;
+      transition-duration: .5s;
+    }
+    .live:hover {
+      background: rgba(245, 29, 51, .95);
+      transition-property: background-color;
+      transition-duration: .5s;
+    }
+
+    .live:active span {
+      font-size: 15px;
+      transition-property: font-size;
+      transition-duration: .1s;
+    }
+     .live>span {
+       font-family: 'Concert One';
+       font-weight: 900;
+       font-size: 20px;
+       color: #FFF;
+
+       letter-spacing: 6px;
+     }
+
+    .dark {
+      width: 90px; height: 45px;
+
+      background: rgba(255, 238, 0, 0.3);
+      border: none;
+      border-radius: 5px;
+
+      transition-property: background-color transform;
+      transition-duration: .5s;
+    }
+
+    .dark:active {
+      transform: scale(0.9);
+      transition-property: transform;
+      transition-duration: .1s;
+    }
+     .dark>span {
+       font-family: Dosis;
+       font-weight: 900;
+       font-size: 16px;
+       color: rgba(160, 135, 5, 0.7);
+
+       letter-spacing: 2.5px;
+     }
+     .dark>span>span {
+       font-family: 'Concert One';
+       font-weight: 500;
+       font-size: 16px;
+     }
+
+
+@media (max-width: 1000px) {
+
+  body { background: rgba(200, 200, 200, 0.1); }
+}

@@ -1,0 +1,26 @@
+.area {
+  grid-column: 1;
+  grid-row: 2;
+
+  width: 75%; height: 100%;
+  min-width: 310px;
+
+  display: grid;
+  
+  align-self: center;
+  justify-self: end;
+
+  align-items: start;
+
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  z-index: 0;
+}
+ .feed {
+   width: 65%; height: auto;
+   min-height: 250px;
+
+   background-color: none;
+   margin: 15px 0;
+ }

@@ -1,0 +1,32 @@
+.area {
+  width: 40%; height: 70%;
+  background: #FFF;
+  border-radius: 50px;
+  box-shadow: 0 0 5px rgba(200, 200, 200, 0.2);
+
+  align-self: center;
+  justify-self: center;
+
+  display: grid;
+}
+ .label {
+   letter-spacing: 2px;
+ }
+  .number {
+    font-family: 'Dosis';
+    font-weight: 600;
+    font-size: 50px;
+  }
+  .sign {
+    font-family: 'Lemonada';
+    font-weight: 600;
+    font-size: 45px;
+  }
+
+ .not__found {
+   font-family: 'Baloo Da 2';
+   font-weight: 600;
+   font-size: 35px;
+
+   justify-self: center;
+ }

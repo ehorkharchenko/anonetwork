@@ -1,0 +1,16 @@
+.area {
+  width: 50%; height: 100%;
+  background: #FFF;
+
+  justify-self: center;
+  display: grid;
+}
+ .name__id {
+
+ }
+ .item {
+   background: rgba(250, 250, 250, 0.4);
+ }
+  .copy {
+    width: 30px; height: 30px;
+  }

@@ -1,0 +1,81 @@
+.friend {
+  width: 90%; height: 100px;
+  margin: 25px 0;
+  
+  border-radius: 5px;
+  margin: 30px 0 30px 10%;
+
+  display: grid;
+
+  grid-template-columns: 30% 40% 30%;
+  grid-template-rows: 100%;
+
+  transition: box-shadow .75s;
+}
+.friend:hover {
+  box-shadow: 0 0 5px rgba(200, 200, 200, 0.3);
+  transition: .75s;
+}
+ .icon {
+   width: 80px; height: 80px;
+   align-self: center;
+   justify-self: center;
+ }
+
+ .data {
+   width: 100%; height: 70%;
+
+   align-self: center;
+   display: grid;
+
+   grid-template-areas:
+    'a a b'
+    'c c c';
+ }
+ .name {
+   grid-area: a;
+   align-self: center;
+ }
+ .pref {
+   grid-area: b;
+   width: 30px; height: 30px;
+
+   background: rgba(255, 238, 0, 0.3);
+   border: none;
+   border-radius: 50%;
+
+   font-family:  'Averia Serif Libre';
+   font-weight: 700;
+   font-size: 20px;
+   color: #c3a720;
+ }
+
+ .delete {
+   grid-column: 3;
+   grid-row: 1;
+
+   width: 75px; height: 35px;
+
+   background: none;
+   border: none;
+   border-radius: 7px;
+
+   transition-property: background-color;
+   transition-duration: .5s;
+
+   align-self: center;
+   justify-self: center;
+ }
+ .delete:hover {
+   background: rgba(255, 238, 0, 0.15);
+   transition-property: background-color;
+   transition-duration: .5s;
+ }
+  .delete>span {
+    font-family: 'Concert One';
+    font-weight: 400;
+    font-size: 18px;
+
+    text-transform: uppercase;
+    color: rgba(245, 29, 51, 1);
+  }

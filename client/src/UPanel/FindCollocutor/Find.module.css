@@ -1,0 +1,244 @@
+.area {
+  width: 100%; height: 100%;
+
+  min-width: 320px;
+  max-width: 750px; 
+
+  background: #FFF;
+  box-shadow: 0 0 5px rgba(50, 50, 50, 0.1);
+  border-radius: 0 0 7px 7px;
+
+  align-self: start;
+  justify-self: center;
+
+  display: grid;
+
+  grid-template-columns: 100%;
+  grid-template-rows: 15% 72% 13%;
+}
+
+.head {
+  width: 100%; height: 100%;
+  min-width: 250px;
+  align-self: center;
+  justify-self: start;
+  display: grid;
+  grid-template-columns: 80% 20%;
+  grid-template-rows: 100%;
+}
+ .head>span {
+   width: 45%; height: 25%;
+   border-bottom: 1.5px solid #ddd;
+   font-family: 'Averia Serif Libre';
+   font-weight: 600;
+   font-size: 16px;
+
+   letter-spacing: 6px;
+   padding: 0 0 0 30px;
+
+   color: #505050;
+    
+   align-self: center;
+   justify-self: start;
+ }
+  .editFindPref {
+    width: 45px; height: 50px;
+    background: rgba(200, 200, 200, 0.1);
+    border: none;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 0 3px #eee inset;
+    align-self: start;
+    justify-self: center;
+    transition: transform .1s;
+  }
+   .editFindPref>img {
+     width: 40%;
+   }
+
+   .editFindPref:active img {
+     transform: scale(0.9);
+     transition: transform .1s;
+   }
+
+ /* Load */
+
+.loaderGetData {
+  width: 60px; height: auto;
+
+  align-self: start;
+  justify-self: center;
+
+  margin: 15% 0 0 0;
+}
+ /* Temp ban */
+.tempban {
+  width: 50%; height: 40%;
+  align-self: start;
+  justify-self: center;
+
+  margin: 10% 0 0 0;
+
+  display: grid;
+
+  grid-template-columns: 100%;
+  grid-template-rows: 30% 70%;
+}
+ .ban_label {
+   font-family: 'Concert One';
+   font-weight: 200;
+   font-size: 25px;
+   text-transform: uppercase;
+
+   display: grid;
+
+   align-items: center;
+   justify-items: center;
+ }
+
+ .ban_timer {
+   width: 80%; height: 50%;
+   
+   align-self: center;
+   justify-self: center;
+
+   display: grid;
+
+   grid-template-columns: 1fr 0.2fr 1fr 0.2fr 1fr;
+   grid-template-rows: 100%;
+ }
+  .ban_timer_item {
+    width: 60px; height: 60px;
+
+    background-color: rgb(255, 150, 135);
+    border-radius: 20%;
+    
+    align-self: center;
+    justify-self: center;
+
+    display: grid;
+    
+    align-items: center;
+    justify-items: center;
+  }
+
+  .ban_timer_separator {
+    font-family: Dosis;
+    font-weight: 900;
+    font-size: 35px;
+    
+    line-height: 15px;
+    align-self: center;
+    justify-self: center;  
+  }
+
+   .ban_timer_item>span {
+     font-family: 'Exo 2';
+     font-weight: 600;
+     font-size: 20px;
+     
+     color: rgb(255, 255, 255);
+     letter-spacing: 2px;
+     box-sizing: padding-box;
+   }
+
+ /* Join */
+
+ .join__area {
+  width: 50%; height: 100%;
+
+  text-transform: uppercase;
+
+  align-self: center;
+  justify-self: center;
+
+  display: grid;
+
+  grid-template-columns: 100%;
+  grid-template-rows: 40% 20%;
+
+  align-items: center;
+  justify-items: center;
+}
+ .join__head {
+   width: 300px; height: 100%;
+   display: grid;
+
+   grid-template-columns: 40% 60%;
+   grid-template-rows: 100%;
+
+   align-items: center;
+   justify-items: center;
+ }
+  .join {
+    min-width: 100px; min-height: 60px;
+
+    background: rgba(255, 238, 0, 0.9);
+    box-shadow: 0 0 10px rgba(255, 238, 0, 0.9);
+    border: none;
+    border-radius: 10px;
+
+    text-transform: none;
+
+    align-self: center;
+    justify-self: center;
+  }
+  .join:active {
+    transform: scale(0.9);
+    transition: .1s;
+  }
+   .join>span {
+     font-family: 'Concert One';
+     font-weight: 600;
+     font-size: 25px;
+     letter-spacing: 3px;
+     color: #c3a720;
+   }
+
+  .to {
+    font-family: 'Averia Serif Libre';
+    font-weight: 700;
+    font-size: 25px;
+
+    letter-spacing: 1px;
+
+    justify-self: center;
+  }
+
+ .footer {
+   width: 40%; height: 100%;
+   min-width: 150px;
+
+   display: grid;
+
+   align-items: center;
+   justify-self: center;
+
+   grid-template-columns: auto auto;
+   grid-template-rows: 100%;
+ }
+  /* .mark {
+
+  } */
+   .mark>span {
+     font-family: 'Concert One';
+     font-weight: 400;
+     font-size: 18px;
+     letter-spacing: 2.5px;
+   }
+
+  .onlNum {
+    width: 65px; height: 40px;
+    background: #fff287;
+    border-radius: 5px;
+
+    display: grid;
+
+    align-items: center;
+    justify-items: center;
+  }
+   .onlNumInner {
+     font-family: Dosis;
+     font-weight: 700;
+     font-size: 12px;
+     color: #a66300;
+   }

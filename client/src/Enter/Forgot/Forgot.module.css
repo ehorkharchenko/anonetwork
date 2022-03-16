@@ -1,0 +1,154 @@
+.area {
+  width: 310px; height: 145px;
+
+  background: #FFF;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(50, 50, 50, 0.1);
+  
+  align-self: center;
+  justify-self: center;
+
+  display: grid;
+
+  grid-template-columns: 170px 140px;
+  grid-template-rows: 100%;
+
+  align-items: center;
+  justify-items: center;
+}
+
+ input[type="file"] {
+    display: none;
+ }
+
+ .label {
+    width: 135px; height: 100%;
+    display: grid;
+    align-items: center;
+    justify-self: end;
+ }
+   .select-file {
+     font-family: 'Concert One';
+     font-weight: 400;
+     font-size: 20px;
+     letter-spacing: 2px;
+     color: #505050;
+
+     transition-property: color;
+     transition-duration: .1s;
+   }
+  .select:hover {
+    color: #000;
+
+    transition-property: color;
+    transition-duration: .2s;
+  }
+
+ .upload {
+   width: 100px; height: 50px;
+
+   background: rgba(235, 155, 5, 0.75);
+   box-shadow: 0 0 3px rgba(235, 155, 5, 1);
+   border: none;
+   border-radius: 10px;
+ }
+ .upload:active {
+   transform: scale(0.9);
+
+   transition-property: transform;
+   transition-duration: 0.1s;
+ }
+  .upload>span {
+    font-family: Dosis;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 2px;
+    color: #FFF;
+  }
+
+  .form-for-recovery {
+    width: 320px; height: 365px;
+    background: #FFF;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(200, 200, 200, 0.25);
+  
+    display: grid;
+  
+    grid-template-columns: 100%;
+    grid-template-rows: 65% 35%;
+  
+    align-items: center;
+    justify-items: center;
+  
+    align-self: center;
+    justify-self: center;
+  }
+
+  .inputs {
+    width: 100%; height: 90%;
+    align-self: end;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    align-items: end;
+    justify-items: center;
+  }
+  
+  .inp {
+    width: 65%; height: 65px;
+  
+    background: rgba(200, 200, 200, 0.2);
+    border: none;
+    border-radius: 5px;
+  
+    font-family: 'Baloo Da 2';
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #303030;
+  
+    padding: 0 15px;
+  
+    align-self: center;
+    justify-self: center;
+  }
+  
+  .submit {
+    grid-column: 1;
+    grid-row: 2;
+  
+    width: 120px; height: 45px;
+    background: rgba(255, 238, 0, 0.7);
+    border: none;
+    box-shadow: 0 0 3px #ffff66;
+  
+    border-radius: 7.5px;
+  
+    display: grid;
+  
+    align-items: center;
+    justify-items: center;
+  
+    transition-property: background-color;
+    transition-duration: .5s;
+  }
+   .submit>span {
+     font-family: Dosis;
+     font-weight: 700;
+     font-size: 20px;
+     letter-spacing: 3px;
+     color: #c3a720;
+   }
+   .submit:hover {
+     background: rgba(255, 238, 0, 1);
+  
+     transition-property: background-color;
+     transition-duration: .5s;
+   }
+   .submit:active {
+     background: rgba(255, 238, 0, 1);
+     transform: scale(0.9);
+  
+     transition-property: transform;
+     transition: .1s;
+   }

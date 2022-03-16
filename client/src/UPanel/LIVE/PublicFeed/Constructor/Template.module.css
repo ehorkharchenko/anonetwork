@@ -1,0 +1,199 @@
+/* History */
+
+.theme {
+  width: 100%;
+  min-width: 300px;
+  max-width: 650px; 
+  height: 100%;
+  min-height: 400px;
+  max-height: 500px;
+
+  background: #FFF;
+  border-radius: 5px;
+  box-shadow: 2px solid rgba(225, 225, 225, 1);
+  margin: 35px auto 75px auto;
+
+  justify-self: center;
+  display: grid;
+
+  grid-template-columns: 100%;
+  grid-template-rows: 20% 60% 20%;
+}
+ .theme_header {
+   width: 100%; height: 100%;
+
+   display: grid;
+
+   grid-template-columns: 50% 50%;
+   grid-template-rows: 100%;
+ }
+  .theme_author {
+    width: 100%; height: 50%;
+    
+    align-self: center;
+    justify-self: center;
+
+    display: grid;
+    
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 100%;
+
+    align-items: center;
+    justify-items: center;
+  }
+   .theme_icon {
+     width: 50px;
+   }
+
+   .theme_authorName {
+     justify-self: start;
+     
+     display: grid;
+
+     grid-template-columns: auto auto;
+     grid-template-rows: 100%;
+   }
+    .theme_label_author {
+      letter-spacing: 2px;
+    }
+
+  .theme_kept {
+    width: 60px; height: 35px;
+    background-color: rgba(225, 225, 225, 0.6);
+    border: 2px solid rgba(225, 225, 225, 0.9);
+    border-radius: 5px;
+
+    align-self: center;
+    justify-self: end;
+
+    margin: 0 60px 0 0;
+    transition: background-color .6s;
+  }
+
+  .theme_kept:hover {
+    background: none;
+    transition: background-color .6s;
+  }
+
+  .theme_kept:active {
+    background: none;
+    border-color: rgba(245, 29, 51, .95);
+  }
+   .theme_kept>span {
+     font-family: 'Concert One';
+     font-weight: 200;
+     font-size: 14px;
+
+     color: #333;
+
+     letter-spacing: 2px;
+   }
+
+ .theme_content {
+
+ }
+
+ .theme_footer {
+   width: 80%; height: 100%;
+   justify-self: center;
+
+   display: flex;
+
+   align-items: center;
+   justify-content: space-between;
+ }
+  .theme_like {
+    width: 50px; height: 50px;
+   
+    background: none;
+    border: none;
+  }
+   .theme_like>span {
+     font-family: 'Days One';
+     font-weight: 600;
+     font-size: 62px;
+     
+     line-height: 32px;
+     color: rgba(245, 29, 51, .6);
+     transition: color .2s;
+   }
+   .theme_like>span:active {
+    font-size: 72px;
+    line-height: 42px;
+    color: rgba(245, 29, 51, 1);
+    transition: color .2s;
+  }
+
+/* Mark */
+
+.mark {
+  width: 80%; height: 450px;
+  margin: 35px auto 45px auto;
+  
+  background: #FFF;
+  border-radius: 5px;
+  display: grid;
+
+  grid-template-columns: 100%;
+  grid-template-rows: 20% 60% 20%;
+}
+ .mark_header {
+   
+ }
+  .mark_icon {
+    width: 50px;
+  }
+
+ .mark_content {
+
+ }
+
+ .mark_footer {
+   width: 85%; height: 100%;
+   
+   justify-self: start;
+   display: grid;
+
+   grid-template-columns: 30% 70%;
+   grid-template-rows: 100%;
+ }
+  .mark_like {
+    width: 30px; height: 30px;
+
+    background: none;
+    border: 6.5px solid rgba(255, 238, 0, 0.6);
+    border-radius: 6px;
+    
+    align-self: center;
+    justify-self: start;
+
+    transform: rotate(45deg);
+    transition: background-color .2s;
+  }
+  .mark_like:active {
+    border: none;
+    background: rgb(255, 230, 0);
+    transition: background-color .2s;
+  }
+
+  .mark_reply {
+    width: 100px; height: 40px;
+    background: rgba(135, 255, 243, 0.5);
+    border: 2px solid rgba(135, 255, 243, 1);
+    border-radius: 5px;
+    transition: background-color .6s;
+  }
+
+  .mark_reply:hover {
+    background: none;
+    transition: background-color .6s;
+  }
+   .mark_reply>span {
+     font-family: Quicksand;
+     font-weight: 600;
+     font-size: 16px;
+
+     color: rgba(245, 29, 51, 0.75);
+     text-transform: uppercase;
+     letter-spacing: 5px;
+   }

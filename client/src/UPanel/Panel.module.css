@@ -1,0 +1,27 @@
+.panel {
+  width: 100%; height: 100%;
+
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 88% 12%;
+}
+
+.oppos__panel {
+  width: 100%; height: 100%;
+  position: fixed;
+
+  display: grid;
+
+  grid-template-columns: 100%;
+  grid-template-rows: 100%;
+}
+
+@media (max-width: 500px) {
+
+  body { background: rgba(200, 200, 200, 0.1); }
+
+  .panel {
+
+    grid-template-rows: 88% 12%;
+  }
+}

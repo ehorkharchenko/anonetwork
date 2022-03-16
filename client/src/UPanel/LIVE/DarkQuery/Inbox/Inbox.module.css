@@ -1,0 +1,32 @@
+.area {
+
+}
+ .queries {
+
+ }
+  .item {
+
+  }
+   .query {
+
+   }
+
+   .choose {
+
+   }
+    .watch {
+      width: 35px; height: 35px;
+      background-color: #ccc;
+      border: none;
+      border-radius: 5px;
+    }
+     .watch>img {
+       width: 95%;
+     }
+
+    .reply {
+
+    }
+     .reply>span {
+
+     }
